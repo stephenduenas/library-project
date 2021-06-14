@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
+const bookRoute = require('./routes/bookRoute.js');
 
 dotenv.config();
 const app = express();
@@ -12,3 +13,5 @@ const DB_URL = process.env.DB_URL;
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => { console.log(`Server running on port ${PORT}`)});
+
+app.use('/book', bookRoute);
