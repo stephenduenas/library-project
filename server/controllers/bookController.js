@@ -1,10 +1,12 @@
 
+const Book = require('../models/bookModel.js');
+
 const createBook = async (req, res) => {
     console.log('create route');
 };
 
 const updateBook = async (req, res) => {
-    console.log('update route');
+    console.log('create route');
 };
 
 const deleteBook = async (req, res) => {
