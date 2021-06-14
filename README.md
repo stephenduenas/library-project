@@ -3,16 +3,15 @@
 <div style="text-align: center;">
     <img src="./img/desktop-screen.png"
         alt="Markdown Tet icon"
-        style="display: inline-block; height: 350px" />
+        style="display: inline-block; width: 500px;" />
     <h2>Desktop Screen</h2>
     <img src="./img/mobile-screen.png"
         alt="Markdown Tet icon"
-        style="display: inline-block; height: 350px" />
+        style="display: inline-block; height: 300px" />
     <h2>Mobile Screen</h2>
 </div>
-<br>
 
-### This project was created with [React](https://github.com/facebook/create-react-app), [Tailwind](https://tailwindcss.com/docs), [Express.js](https://expressjs.com/) and [Mongoose](https://mongoosejs.com/docs/).
+### This project was created with [React](https://github.com/facebook/create-react-app), [Redux](https://redux.js.org/), [Tailwind](https://tailwindcss.com/docs), [Express.js](https://expressjs.com/) and [Mongoose](https://mongoosejs.com/docs/).
 
 ## Features
 1. Create, Read, Update and Delete Books
