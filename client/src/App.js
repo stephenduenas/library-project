@@ -1,6 +1,6 @@
 
 // import Form from './components/Form/Form';
-// import Home from './components/Home/Home';
+import Home from './components/Home/Home';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import {
   BrowserRouter as Router,
@@ -15,7 +15,7 @@ const App = () => {
         <NavigationBar></NavigationBar>
         <Switch>
             <Route exact path="/">
-              {/* <Home></Home> */}
+              <Home></Home>
             </Route>
             <Route exact path="/form">
               {/* <Form></Form> */}
