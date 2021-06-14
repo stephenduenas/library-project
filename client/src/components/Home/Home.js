@@ -45,8 +45,8 @@ const Home =  () => {
     const renderEmptyContainer = () => (<div className="text-center relative p-5 bg-blue-400 text-blue-900">
                                             <h2 className="text-2xl font-medium">Empty</h2>
                                         </div>);
-    
-    const renderBookList = () => (<div id="book_list_container" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">
+
+    const renderBookList = () => (<div className="flex flex-wrap">
                                     {filteredBooks}
                                 </div>);
 
