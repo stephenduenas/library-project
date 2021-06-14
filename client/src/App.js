@@ -1,60 +1,33 @@
-import React from "react";
+
+// import Form from './components/Form/Form';
+// import Home from './components/Home/Home';
+import NavigationBar from './components/NavigationBar/NavigationBar';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
-import { useSelector } from 'react-redux'
-function App() {
 
+const App = () => {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+      <div className="App font-roboto">
+        <NavigationBar></NavigationBar>
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+            <Route exact path="/">
+              {/* <Home></Home> */}
+            </Route>
+            <Route exact path="/form">
+              {/* <Form></Form> */}
+            </Route>
+            <Route path="/">
+              <div>Not found</div>
+            </Route>
+          </Switch>
       </div>
     </Router>
+    
   );
-}
-
-function Home() {
-  const test = useSelector(state => state.books);
-  console.log(test);
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
 
 export default App;
