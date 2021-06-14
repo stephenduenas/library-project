@@ -1,0 +1,5 @@
+.magnifying-glass-icon {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+}
