@@ -46,7 +46,7 @@ const Form = () => {
     }
 
     return (
-        <div className="bg-blue-100">
+        <div className="bg-blue-100 mt-5">
             <div className="container mx-auto">
                 <form action="POST" onSubmit={renderSubmit}>
                     <div className="bg-blue-400 p-5 text-blue-900">
@@ -55,8 +55,8 @@ const Form = () => {
                         <FormGroup renderChange={renderChange} name="author" value={form.author}></FormGroup>
                         <FormGroup renderChange={renderChange} name="publisher" value={form.publisher}></FormGroup>
                         <div className="flex justify-center mt-5 ">
-                            <button className="mr-5 px-10 py-3 bg-blue-800 hover:bg-blue-900 transition text-blue-100" type="submit">{MODULE} book</button>
-                            <a href="#" className="px-10 py-3 bg-yellow-800 hover:bg-yellow-900 transition text-blue-100" onClick={e => {
+                            <button className="mr-5 px-10 py-3 bg-blue-800 hover:bg-blue-900 transition duration-300 text-blue-100" type="submit">{MODULE} book</button>
+                            <a className="cursor-pointer px-10 py-3 bg-yellow-800 hover:bg-yellow-900 transition duration-300 text-blue-100" onClick={e => {
                                 e.preventDefault();
                                 history.push('/');
                             }}>Back</a>
