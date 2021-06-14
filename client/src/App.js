@@ -1,5 +1,5 @@
 
-// import Form from './components/Form/Form';
+import Form from './components/Form/Form';
 import Home from './components/Home/Home';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import {
@@ -18,7 +18,7 @@ const App = () => {
               <Home></Home>
             </Route>
             <Route exact path="/form">
-              {/* <Form></Form> */}
+              <Form></Form>
             </Route>
             <Route path="/">
               <div>Not found</div>
@@ -26,7 +26,6 @@ const App = () => {
           </Switch>
       </div>
     </Router>
-    
   );
 }
 
