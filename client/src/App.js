@@ -5,8 +5,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
-
+import { useSelector } from 'react-redux'
 function App() {
+
   return (
     <Router>
       <div>
@@ -43,6 +44,8 @@ function App() {
 }
 
 function Home() {
+  const test = useSelector(state => state.books);
+  console.log(test);
   return <h2>Home</h2>;
 }
 
